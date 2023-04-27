@@ -1,5 +1,19 @@
-{% extends "base.html" %}
 
+{% extends "base.html" %}
+{% load static %}
 {% block title %}My Child Page{% endblock %}
 
-{% block content %} <!– content specific to child template –> <h1>Hello, World! {% endblock %}
+{% block content %}
+ <!-- <!–- content specific to child template -–>  -->
+ 
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 text-primary">
+          <h1>Hello, World!
+        </div>
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-primary">Click Me
+        </div>
+      </div>
+</div>
+{% endblock %}

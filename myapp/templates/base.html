@@ -1,9 +1,15 @@
 <!--base.html -->
+{% load static %}
+{% load bootstrap4 %}
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>{% block title %}My Site{% endblock %}</title>
     <!-- common CSS and JavaScript files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+    {% bootstrap_css %}
 </head>
 <body>
     {% include "navbar.html" %}
